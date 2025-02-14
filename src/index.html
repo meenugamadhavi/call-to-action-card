@@ -1,86 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chat Bot</title>
+    <title>Document</title>
     <style>
       * {
-        margin: 0px;
         padding: 0px;
+        margin: 0px;
         font-family: sans-serif;
+        font-weight: 100;
+        color: rgba(0, 0, 0, 40%);
       }
-      article {
-        width: 600px;
-        height: 500px;
-        border: 1px solid;
+      section > * {
+        margin-bottom: 20px;
+      }
+      section {
+        width: 40%;
+        height: 10%;
         margin: 200px auto;
+        border: 1px solid rgba(0, 0, 0, 20%);
+        padding: 4%;
       }
-      #box {
-        width: 450px;
-        height: 350px;
-        margin: 55px auto;
-      }
-      article h1 {
-        font-size: 40px;
-        font-weight: 100;
-        color: rgba(0, 0, 0, 70%);
-        text-align: left;
-      }
-      #underscores {
-        padding-top: 20px;
-        padding-bottom: 10px;
-        color: rgba(0, 0, 0, 100%);
-        font-weight: 900;
-      }
-      #text-styles {
-        word-spacing: 2px;
-        font-size: 24px;
-        line-height: 30px;
-        font-weight: 100;
+      h1 {
+        font-size: 50px;
         color: rgba(0, 0, 0, 50%);
-        padding-top: 20px;
       }
-      #button {
-        text-transform: uppercase;
-        height: 60px;
-        width: 450px;
-        border: 1px solid;
-        text-align: center;
-        background-color: #4184e1;
-        color: white;
-        margin-top: 20px;
-        border-radius: 40px;
-      }
-      #button p{
-        padding-top: 16px;
-        font-size: 30px;
-        color: white;
+      #line {
+        width: 50px;
+        border: 1px solid rgba(0, 0, 0, 80%);
       }
       p {
-        font-weight: 100;
-        font-size: 16 px;
-        padding-top: 30px;
-        color: rgba(0, 0, 0, 30%);
+        font-size: 24px;
+        word-spacing: 2px;
+        line-height: 30px;
+        color: rgba(0, 0, 0, 40%);
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        background-color: #4184e1;
+        text-transform: uppercase;
+        display: block;
+        text-align: center;
+        padding: 18px;
+        font-size: 22px;
+        border-radius: 40px;
+      }
+      #terms-conditions {
+        font-size: 16px;
+        color: rgba(0, 0, 0, 25%);
+        word-spacing: 0px;
+        margin: 0px;
       }
     </style>
   </head>
   <body>
-    <article>
-      <div id="box">
-        <h1>Built your first chatbot in 10 minutes!</h1>
-        <p id="underscores">_______</p>
-        <p id="text-styles">
-          Have a bot answering questions from customers on your within 10
-          minutes of signing up for ChatBot
-        </p>
-        <div id="button"><p>try now</p></div>
-        <!-- <p id="button">try now</p> -->
-        <p>
-          By clicking try now you create an account and agree to our Terms and
-          Conditions and Privacy Policy
-        </p>
-      </div>
-    </article>
+    <section>
+      <h1>Build your first chatbot in 10 minutes!</h1>
+      <div id="line"></div>
+      <p>
+        Have a bot answering questions from customers on your website withing 10
+        minutes of signing up for ChatBot
+      </p>
+      <a href="#">try now &rarr;</a>
+      <p id="terms-conditions">
+        By clicking try now create an account and agree to our Terms and
+        Conditions and Privacy Policy
+      </p>
+    </section>
   </body>
 </html>
